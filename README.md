@@ -29,7 +29,6 @@ class User{
 
 services/user_service.dart
 ```
-final userService = Provider((ref) => UserService());
 
 class UserService {
   Future<List<User>> getUser() async {
@@ -43,6 +42,8 @@ class UserService {
     }
   }
 }
+
+final userService = Provider((ref) => UserService());
 ```
 
 providers/user_provider.dart
